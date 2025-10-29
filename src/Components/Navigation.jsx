@@ -1,34 +1,35 @@
-import { Link, NavLink } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 import Logo from "./ui/Logo";
 
 function Navigation() {
   return (
-    <nav className="absolute z-10 flex items-center justify-between w-full px-6 py-4 bg-white/20 bg-opacity-70 backdrop-blur-md shadow-md">
+    <header className="p-4 flex items-center justify-between border-b border-stone-700">
       <Link to="/">
         <Logo />
       </Link>
-      <ul className="flex items-center gap-6 tracking-wide text-zinc-50 uppercase">
-        <li>
-          <NavLink to="/work">Work</NavLink>
-        </li>
-        <li>
-          <NavLink to="/about">About</NavLink>
-        </li>
-        <li>
-          <NavLink to="/contact">News</NavLink>
-        </li>
-        <li>
-          <NavLink to="/collabs">Collabs</NavLink>
-        </li>
-        <li>
-          <NavLink to="/press">Press</NavLink>
-        </li>
-        <li>
-          <NavLink to="/contact">Contact</NavLink>
-        </li>
-      </ul>
-    </nav>
+      <nav>
+        <ul className="flex items-center gap-12 ">
+          <li className="tracking-wider text-stone-300 hover:text-stone-50">
+            <Link to="/work">Works</Link>
+          </li>
+          <li className="tracking-wider text-stone-300 hover:text-stone-50">
+            <Link to="/about">About</Link>
+          </li>
+          <li className="tracking-wider text-stone-300 hover:text-stone-50">
+            <Link to="/news">News</Link>
+          </li>
+          <li className="tracking-wider text-stone-300 hover:text-stone-50">
+            <Link to="/collabs">Collabs</Link>
+          </li>
+          <li className="tracking-wider text-stone-300 hover:text-stone-50">
+            <Link to="/press">Press</Link>
+          </li>
+          <li className="tracking-wider text-stone-300 hover:text-stone-50">
+            <Link to="/contact">Contact</Link>
+          </li>
+        </ul>
+      </nav>
+    </header>
   );
 }
 

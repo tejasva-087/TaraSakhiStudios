@@ -1,13 +1,5 @@
-import ArchitecturalCarousel from "../Components/ArchitecturalCarousel";
-import Navigation from "../Components/Navigation";
-
 function HomePage() {
-  return (
-    <>
-      <Navigation />
-      <ArchitecturalCarousel />
-    </>
-  );
+  return <p>Home Page</p>;
 }
 
 export default HomePage;
