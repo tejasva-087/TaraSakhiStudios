@@ -50,7 +50,7 @@ function ImageCarousel({ images, imagesAlt }) {
         <img
           src={`../${images[activeImage]}`}
           alt={imagesAlt.title}
-          className="w-full h-auto object-contain rounded-md"
+          className="w-full h-auto max-h-[70vh] object-contain rounded-md"
         />
         <button
           className="absolute left-4 top-1/2 -translate-y-1/2 text-2xl bg-stone-950/40 text-stone-50 px-2 py-6 hidden md:block"

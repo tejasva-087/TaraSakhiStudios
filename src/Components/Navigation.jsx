@@ -16,13 +16,7 @@ function Navigation() {
             <Link to="/about">About</Link>
           </li>
           <li className="tracking-wider text-stone-300 hover:text-stone-50">
-            <Link to="/news">News</Link>
-          </li>
-          <li className="tracking-wider text-stone-300 hover:text-stone-50">
             <Link to="/collabs">Collabs</Link>
-          </li>
-          <li className="tracking-wider text-stone-300 hover:text-stone-50">
-            <Link to="/press">Press</Link>
           </li>
           <li className="tracking-wider text-stone-300 hover:text-stone-50">
             <Link to="/contact">Contact</Link>

@@ -153,45 +153,6 @@
     }
   },
   {
-    "id": "decks-on-the-beach-transportable-disco-bar",
-    "images": [
-      "src/assets/images/WrokImages/decks/decks1.jpg",
-      "src/assets/images/WrokImages/decks/decks2.jpg",
-      "src/assets/images/WrokImages/decks/decks3.jpg",
-      "src/assets/images/WrokImages/decks/decks4.jpg",
-      "src/assets/images/WrokImages/decks/decks5.jpg",
-      "src/assets/images/WrokImages/decks/decks6.jpg",
-      "src/assets/images/WrokImages/decks/decks7.jpg",
-      "src/assets/images/WrokImages/decks/decks8.jpg",
-      "src/assets/images/WrokImages/decks/decks9.jpg",
-      "src/assets/images/WrokImages/decks/decks10.jpg",
-      "src/assets/images/WrokImages/decks/decks11.jpg",
-      "src/assets/images/WrokImages/decks/decks12.jpg",
-      "src/assets/images/WrokImages/decks/decks13.jpg",
-      "src/assets/images/WrokImages/decks/decks14.jpg",
-      "src/assets/images/WrokImages/decks/decks15.jpg"
-    ],
-    "tagline": "FLEETING HEARTS",
-    "title": "DECKS on the BEACH Transportable Disco Bar",
-    "description": [
-      "This landmark by the sea acquires an additional layer on Friday nights: an ephemeral structure, mountable in a few hours and transformed into an open-air summer nightclub. Three main structures organize the space: the DJ booth, the dance floor and the 12 meters bar facing the sea.",
-      "Translucent panels with thin slits longs the entire entrance and creates little niches for intimate moments. The visitors walk around the DJ booth’s curved panels to discover the beating heart of the space: the central floating ring, a playing light structure connected to the music’s pulse. It is in dialogue with the ferris wheel in the surrounding background. The space focuses on the notion of unity in diversity, inspiring a feeling of oneness blending people to create “one” social space."
-    ],
-    "otherDetails": {
-      "client": "Alternite",
-      "location": "Sporting Club Beach, Raouche, Beirut, Lebanon",
-      "area": "800 sqm",
-      "completionDate": "May 2018",
-      "team": "Tessa Sakhi, Tara Sakhi, Aman Slim, Elie Harb",
-      "generalContractor": "Joe Habchy",
-      "electricalEngineer": "Ziad Yazbeck",
-      "lightingConsultant": "Camille Madi, Georges Rouhana",
-      "soundEngineer": "Woody Nawfal",
-      "bar&StoolDesign": "Marc Baroud",
-      "photos": "Tony Elieh"
-    }
-  },
-  {
     "id": "writer's-loft",
     "images": [
       "src/assets/images/WrokImages/loft/loft1.jpg",
