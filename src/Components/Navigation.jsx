@@ -1,52 +1,30 @@
-import { Link } from "react-router-dom";
-import Logo from "./ui/Logo";
 import { useState } from "react";
-import { ListIcon, XIcon } from "@phosphor-icons/react";
+import Logo from "./ui/Logo";
+import NavButton from "./ui/NavButton";
+import NavLinks from "./ui/NavLinks";
 
 function Navigation() {
-  const [navOpen, setNavOpen] = useState(true);
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
+  function handleLinkClick() {
+    setIsNavOpen(false);
+  }
 
   return (
-    <header
-      className="p-4 flex items-center justify-between border-b border-stone-700 overflow-hidden"
-      style={{ zIndex: 9999999 }}
-    >
-      <Link to="/" className="">
-        <Logo />
-      </Link>
-
+    <header className="relative p-4 lg:px-12 lg:py-6 flex items-center justify-between">
+      <Logo />
       <nav
-        className={`opacity-0 pointer-events-none h-svh w-[80%] absolute top-0 left-0 md:h-auto md:relative md:w-auto md:pointer-events-auto md:opacity-100 transition-all duration-300 bg-zinc-50/30 backdrop-blur-xl md:bg-transparent md:backdrop-blur-none ${
-          navOpen ? "opacity-100 pointer-events-auto" : ""
-        }`}
-        style={{ zIndex: 9999999 }}
+        className={`bg-zinc-50/80 backdrop-blur-xl absolute top-0 -left-full z-40 h-svh w-full sm:w-[80%] md:w-[60%] transition-all duration-300 ${
+          isNavOpen ? "left-0" : ""
+        } lg:relative lg:left-0 lg:h-auto lg:w-auto lg:bg-transparent`}
       >
-        <ul className="flex items-center justify-center h-full gap-12 flex-col md:flex-row">
-          <li className="tracking-wider text-stone-300 hover:text-stone-50">
-            <Link to="/work">Works</Link>
-          </li>
-          <li className="tracking-wider text-stone-300 hover:text-stone-50">
-            <Link to="/about">About</Link>
-          </li>
-          <li className="tracking-wider text-stone-300 hover:text-stone-50">
-            <Link to="/collabs">Collabs</Link>
-          </li>
-          <li className="tracking-wider text-stone-300 hover:text-stone-50">
-            <Link to="/contact">Contact</Link>
-          </li>
-        </ul>
+        <NavLinks handleClick={handleLinkClick} />
       </nav>
-      <button
-        className={`space-y-1 md:hidden block `}
-        onClick={() => setNavOpen((val) => !val)}
-        style={{ zIndex: 10000 }}
-      >
-        {navOpen ? (
-          <XIcon className="text-3xl" />
-        ) : (
-          <ListIcon className="text-3xl" />
-        )}
-      </button>
+      <NavButton
+        isOpen={isNavOpen}
+        setIsOpen={setIsNavOpen}
+        className="absolute top-6 right-3 lg:hidden"
+      />
     </header>
   );
 }

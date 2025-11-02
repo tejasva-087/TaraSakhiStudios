@@ -1,11 +1,13 @@
-import TaraSakhiLogo from "../../assets/images/logo.png";
+import { Link } from "react-router-dom";
+
+import logo from "../../assets/images/logo.png";
 
 function Logo() {
   return (
-    <div className="flex items-center gap-2">
-      <img src={TaraSakhiLogo} alt="Tara sakhi logo" className="w-14" />
-      <h3 className="font-extralight text-xl">TARA SAKHI STUDIO</h3>
-    </div>
+    <Link to="/" className="flex items-center">
+      <img src={logo} alt="" className="w-12" />
+      <h3 className="text-2xl font-light">Tara Sakhi Studios</h3>
+    </Link>
   );
 }
 

@@ -1,27 +1,18 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
-import Layout from "./Components/Layout";
-import HomePage from "./Pages/HomePage";
-import WorkPage from "./Pages/WorkPage";
-import WorksPage from "./Pages/WorksPage";
-import NewsPage from "./Pages/NewsPage";
-import PressPage from "./Pages/PressPage";
-import CollabsPage from "./Pages/CollabsPage";
-import ContactPage from "./Pages/ContactPage";
-import AboutPage from "./Pages/AboutPage";
+import MainPageLayout from "./layout/MainPageLayout";
 
 const router = createBrowserRouter([
   {
-    element: <Layout />,
+    element: <MainPageLayout />,
     children: [
-      { path: "/", element: <HomePage />, index: true },
-      { path: "/about", element: <AboutPage /> },
-      { path: "/work", element: <WorksPage /> },
-      { path: "/work/:id", element: <WorkPage /> },
-      { path: "/news", element: <NewsPage /> },
-      { path: "/press", element: <PressPage /> },
-      { path: "/collabs", element: <CollabsPage /> },
-      { path: "/contact", element: <ContactPage /> },
+      { path: "/", element: <p>Home page</p>, index: true },
+      { path: "/about", element: <p>About page</p> },
+      { path: "/work", element: <p>Work page</p> },
+      { path: "/work/:id", element: <p>work details</p> },
+      { path: "/news", element: <p>news</p> },
+      { path: "/press", element: <p>press</p> },
+      { path: "/collabs", element: <p>collabs</p> },
+      { path: "/contact", element: <p>contact page</p> },
     ],
   },
 ]);
