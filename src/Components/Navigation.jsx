@@ -11,7 +11,7 @@ function Navigation() {
   }
 
   return (
-    <header className="relative p-4 lg:px-12 lg:py-6 flex items-center justify-between">
+    <header className="sticky top-0 left-0 w-full z-50 p-4 lg:px-12 lg:py-6 flex items-center justify-between bg-zinc-900">
       <Logo />
       <nav
         className={`bg-zinc-50/10 backdrop-blur-lg absolute top-0 -left-full z-40 h-svh w-fit transition-all duration-300 ${
