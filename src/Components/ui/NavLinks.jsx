@@ -36,11 +36,11 @@ function NavLinks({ handleClick }) {
 
       <li>
         <Link
-          to="/News"
+          to="/#contact-us"
           className="border-b-2 border-transparent  hover:border-zinc-50 transition-all duration-300 text-zinc-100 hover:text-zinc-50 uppercase text-2xl lg:text-sm tracking-wider font-light pb-1"
           onClick={handleClick}
         >
-          News
+          Contact us
         </Link>
       </li>
     </ul>

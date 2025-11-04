@@ -34,10 +34,9 @@ function HeroImageCarousel({ images }) {
         {images.map((image, i) => {
           return (
             <li
-              className={`w-full -translate-x-[${
-                activeIndex * 100
-              }%] transition-all duration-600`}
+              className={`w-full transition-all duration-600`}
               key={i}
+              style={{ transform: `translateX(-${activeIndex * 100}%)` }}
             >
               <img
                 className="h-full object-cover"
