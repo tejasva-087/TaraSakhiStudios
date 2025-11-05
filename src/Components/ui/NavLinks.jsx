@@ -7,8 +7,8 @@ function NavLinks({ handleClick }) {
     >
       <li className="">
         <Link
-          to="/about"
-          className="border-b-2 border-transparent  hover:border-zinc-50 transition-all duration-300 text-zinc-100 hover:text-zinc-50 uppercase text-2xl lg:text-sm tracking-wider font-light pb-1"
+          to="/#about"
+          className="border-b-2 border-transparent  hover:border-zinc-50 transition-all duration-300 text-zinc-900 lg:text-zinc-50 hover:text-zinc-50 uppercase text-2xl lg:text-sm tracking-wider font-light pb-1"
           onClick={handleClick}
         >
           About
@@ -17,7 +17,7 @@ function NavLinks({ handleClick }) {
       <li>
         <Link
           to="/Work"
-          className="border-b-2 border-transparent  hover:border-zinc-50 transition-all duration-300 text-zinc-100 hover:text-zinc-50 uppercase text-2xl lg:text-sm tracking-wider font-light pb-1"
+          className="border-b-2 border-transparent  hover:border-zinc-50 transition-all duration-300 text-zinc-900 lg:text-zinc-50 lg:text-zinc-59 hover:text-zinc-50 uppercase text-2xl lg:text-sm tracking-wider font-light pb-1"
           onClick={handleClick}
         >
           Work
@@ -27,7 +27,7 @@ function NavLinks({ handleClick }) {
       <li>
         <Link
           to="/collabs"
-          className="border-b-2 border-transparent  hover:border-zinc-50 transition-all duration-300 text-zinc-100 hover:text-zinc-50 uppercase text-2xl lg:text-sm tracking-wider font-light pb-1"
+          className="border-b-2 border-transparent  hover:border-zinc-50 transition-all duration-300 text-zinc-900 lg:text-zinc-50 lg:text-zinc-59 hover:text-zinc-50 uppercase text-2xl lg:text-sm tracking-wider font-light pb-1"
           onClick={handleClick}
         >
           Collabs
@@ -37,7 +37,7 @@ function NavLinks({ handleClick }) {
       <li>
         <Link
           to="/#contact-us"
-          className="border-b-2 border-transparent  hover:border-zinc-50 transition-all duration-300 text-zinc-100 hover:text-zinc-50 uppercase text-2xl lg:text-sm tracking-wider font-light pb-1"
+          className="border-b-2 border-transparent  hover:border-zinc-50 transition-all duration-300 text-zinc-900 lg:text-zinc-50 lg:text-zinc-59 hover:text-zinc-50 uppercase text-2xl lg:text-sm tracking-wider font-light pb-1"
           onClick={handleClick}
         >
           Contact us

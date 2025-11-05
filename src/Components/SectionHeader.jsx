@@ -11,7 +11,7 @@ function SectionHeader({ lines, description, linkPlaceHolder, linkTo }) {
         ))}
       </h2>
       <div className="mb-6 sm:w-[40vw] md:w-[25vw]">
-        <p className="text-sm mb-2 text-zinc-300">{description}</p>
+        <p className="text-base mb-2 text-zinc-300">{description}</p>
         <Link
           to={linkTo}
           className="inline-flex items-center gap-1 uppercase text-sm border-b border-zinc-300 text-zinc-300 hover:text-zinc-50 transition-all duration-300"

@@ -12,9 +12,9 @@ function CollabsLink({ image, to, title, description }) {
         alt="Craftsmen working on a pot"
         className="w-full rounded-3xl max-h-48 object-cover md:w-64 md:h-auto"
       />
-      <div className="grid grid-cols-[150px_1fr_auto] w-full gap-4 md:gap-6 lg:gap-12">
+      <div className="grid grid-cols-[auto_auto] lg:grid-cols-[150px_1fr_auto] sm:grid-cols-[1fr_auto] gap-4 md:gap-6 lg:gap-12 w-full">
         <h3 className="text-xl uppercase">{title}</h3>
-        <p className="line-clamp-4 text-zinc-300 group-hover:text-zinc-50 transition-all duration-300 hidden md:block">
+        <p className="sm:row-2 lg:row-1 lg:col-2 w-full text-zinc-300 group-hover:text-zinc-50 transition-all duration-300 hidden md:block">
           {description}
         </p>
         <span className="text-xl bg-zinc-50 text-zinc-800 h-fit p-1 rounded-full transition-all duration-300 w-fit">

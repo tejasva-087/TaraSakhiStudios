@@ -1,6 +1,7 @@
-import { Link } from "react-router-dom";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
+
 import ProjectDisplay from "../../components/ProjectDisplay";
-import { ArrowUpRightIcon } from "@phosphor-icons/react";
 
 import project1 from "../../assets/images/WorkImages/sax/sax6.jpg";
 import project2 from "../../assets/images/WorkImages/adar/adar3.jpg";
@@ -10,9 +11,36 @@ import project5 from "../../assets/images/WorkImages/o1ne/o1ne3.jpg";
 import project6 from "../../assets/images/WorkImages/skybar/skybar1.jpg";
 import SectionHeader from "../../components/sectionHeader";
 
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      delayChildren: 0.1,
+      staggerChildren: 0.08,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { y: 30, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.6,
+      ease: "easeOut",
+    },
+  },
+};
+
 function ProjectSection() {
+  const ref = useRef(null);
+
+  const isInView = useInView(ref, { once: true, amount: 0.2 });
+
   return (
-    <section className="md:mt-24 mt-12">
+    <section className="md:pt-24 pt-12">
       <SectionHeader
         lines={["CURATED PORTFOLIO OF", "DISTINCTIVE DESIGN PROJECTS"]}
         description="Showcasing our most distinguished projects, a testament to precision,
@@ -20,38 +48,57 @@ function ProjectSection() {
         linkPlaceHolder="View all"
         linkTo="/work"
       />
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 sm:grid gap-4">
-        <ProjectDisplay
-          image={project1}
-          title="Saxx"
-          className="inline-block"
-        />
-        <ProjectDisplay
-          image={project2}
-          title="Adar"
-          className="inline-block"
-        />
-        <ProjectDisplay
-          image={project3}
-          title="Decks"
-          className="hidden sm:inline-block"
-        />
-        <ProjectDisplay
-          image={project4}
-          title="Jurat"
-          className="hidden sm:inline-block"
-        />
-        <ProjectDisplay
-          image={project5}
-          title="O1ne"
-          className="hidden md:inline-block"
-        />
-        <ProjectDisplay
-          image={project6}
-          title="Skybar"
-          className="hidden md:inline-block"
-        />
-      </div>
+
+      <motion.div
+        ref={ref}
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 sm:grid gap-4"
+        variants={containerVariants}
+        initial="hidden"
+        animate={isInView ? "visible" : "hidden"}
+      >
+        <motion.div variants={itemVariants}>
+          <ProjectDisplay
+            image={project1}
+            title="Saxx"
+            className="inline-block"
+          />
+        </motion.div>
+        <motion.div variants={itemVariants}>
+          <ProjectDisplay
+            image={project2}
+            title="Adar"
+            className="inline-block"
+          />
+        </motion.div>
+        <motion.div variants={itemVariants}>
+          <ProjectDisplay
+            image={project3}
+            title="Decks"
+            className="hidden sm:inline-block"
+          />
+        </motion.div>
+        <motion.div variants={itemVariants}>
+          <ProjectDisplay
+            image={project4}
+            title="Jurat"
+            className="hidden sm:inline-block"
+          />
+        </motion.div>
+        <motion.div variants={itemVariants}>
+          <ProjectDisplay
+            image={project5}
+            title="O1ne"
+            className="hidden md:inline-block"
+          />
+        </motion.div>
+        <motion.div variants={itemVariants}>
+          <ProjectDisplay
+            image={project6}
+            title="Skybar"
+            className="hidden md:inline-block"
+          />
+        </motion.div>
+      </motion.div>
     </section>
   );
 }
