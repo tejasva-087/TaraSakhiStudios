@@ -61,6 +61,7 @@ function ProjectSection() {
             image={project1}
             title="Saxx"
             className="inline-block"
+            id="sax-jazz-restaurant-&-lounge"
           />
         </motion.div>
         <motion.div variants={itemVariants}>
@@ -68,6 +69,7 @@ function ProjectSection() {
             image={project2}
             title="Adar"
             className="inline-block"
+            id="adar-restaurant-&-epicerie-fine"
           />
         </motion.div>
         <motion.div variants={itemVariants}>
@@ -75,13 +77,15 @@ function ProjectSection() {
             image={project3}
             title="Decks"
             className="hidden sm:inline-block"
+            id="decks-on-the-beach-transportable-disco-bar"
           />
         </motion.div>
         <motion.div variants={itemVariants}>
           <ProjectDisplay
             image={project4}
-            title="Jurat"
+            title="murano"
             className="hidden sm:inline-block"
+            id="murano-sculptural-vessels"
           />
         </motion.div>
         <motion.div variants={itemVariants}>
@@ -89,6 +93,7 @@ function ProjectSection() {
             image={project5}
             title="O1ne"
             className="hidden md:inline-block"
+            id="o1ne-nightclub-&-venue"
           />
         </motion.div>
         <motion.div variants={itemVariants}>
@@ -96,6 +101,7 @@ function ProjectSection() {
             image={project6}
             title="Skybar"
             className="hidden md:inline-block"
+            id="skybar-nightclub-&-bar-rooftop"
           />
         </motion.div>
       </motion.div>

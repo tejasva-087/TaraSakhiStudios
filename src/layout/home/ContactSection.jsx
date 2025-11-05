@@ -54,7 +54,7 @@ function ContactSection() {
   const isInView = useInView(ref, { once: true, amount: 0.2 });
 
   return (
-    <section ref={ref} className="md:pt-24 pt-12 sm:px-8">
+    <section ref={ref} className="md:pt-24 pt-12 sm:px-8" id="contact-us">
       <motion.h2
         initial={{ y: -20, opacity: 0 }}
         animate={isInView ? { y: 0, opacity: 1 } : {}}
@@ -112,7 +112,6 @@ function ContactSection() {
 
         <motion.form
           className="bg-zinc-800 p-8 rounded-3xl"
-          id="contact-us"
           variants={formBlockVariants}
         >
           <div className="space-y-3 mb-6">
