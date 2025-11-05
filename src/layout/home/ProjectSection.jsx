@@ -76,7 +76,7 @@ function ProjectSection() {
           <ProjectDisplay
             image={project3}
             title="Decks"
-            className="hidden sm:inline-block"
+            className="inline-block"
             id="decks-on-the-beach-transportable-disco-bar"
           />
         </motion.div>

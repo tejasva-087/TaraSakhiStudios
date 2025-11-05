@@ -5,7 +5,7 @@ function CollabsLink({ image, to, title, description }) {
   return (
     <Link
       to={to}
-      className="flex flex-col md:flex-row gap-4 md:gap-6 lg:gap-12 border-b border-t border-zinc-500 px-6 py-4 group hover:bg-zinc-800 transition-all duration-300"
+      className="flex flex-col md:flex-row gap-4 md:gap-6 lg:gap-12 border-t border-zinc-500 px-6 py-4 group hover:bg-zinc-800 transition-all duration-300"
     >
       <img
         src={image}

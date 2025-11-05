@@ -51,7 +51,7 @@ function CollabsSection() {
         variants={container}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
-        className="mb-4"
+        className="mb-4 border-b border-zinc-500"
       >
         <motion.li variants={item}>
           <CollabsLink
@@ -104,7 +104,7 @@ function CollabsSection() {
         <motion.li variants={item}>
           <CollabsLink
             image={photographers}
-            to="/collabs#photographer"
+            to="/collabs#photographers"
             title="Photographer"
             description="Each photographer translates his/her own perception of the projects into stills and memories."
           />

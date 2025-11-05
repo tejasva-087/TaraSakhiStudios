@@ -10,7 +10,7 @@ function ProjectDisplay({ image, id, title, className }) {
       <img
         src={image}
         alt={title}
-        className="object-cover group-hover:scale-125 transition-all duration-600"
+        className="object-cover group-hover:scale-110 transition-all duration-600"
       />
       <div className="absolute inset-0 bottom-0 left-0 w-full h-full  px-8 py-6 flex items-end bg-linear-to-t from-black/60 to-black/60">
         <div className="flex items-center justify-between w-full">

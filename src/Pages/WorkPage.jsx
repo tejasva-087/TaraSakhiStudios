@@ -38,7 +38,7 @@ function WorkPage() {
     <section className="">
       <motion.div
         ref={ref}
-        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 sm:grid gap-4"
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 sm:grid gap-4 md:px-8 md:py-4 sm:px-6 sm:py-3 p-4"
         variants={containerVariants}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}

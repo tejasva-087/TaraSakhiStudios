@@ -7,6 +7,15 @@ function NavLinks({ handleClick }) {
     >
       <li className="">
         <Link
+          to="/home"
+          className="border-b-2 border-transparent  hover:border-zinc-50 transition-all duration-300 text-zinc-900 lg:text-zinc-50 hover:text-zinc-50 uppercase text-2xl lg:text-sm tracking-wider font-light pb-1"
+          onClick={handleClick}
+        >
+          Home
+        </Link>
+      </li>
+      <li className="">
+        <Link
           to="/#about"
           className="border-b-2 border-transparent  hover:border-zinc-50 transition-all duration-300 text-zinc-900 lg:text-zinc-50 hover:text-zinc-50 uppercase text-2xl lg:text-sm tracking-wider font-light pb-1"
           onClick={handleClick}
